@@ -4,6 +4,7 @@ public class Animal {
 	
 	private String nome;
 	private int idade;
+	
 	public String getNome() {
 		return nome;
 	}
@@ -16,14 +17,6 @@ public class Animal {
 	public void setIdade(int idade) {
 		this.idade = idade;
 	}
-	public void somAnimal() {
-		
-	}
-	public void correr() {
-		
-	}
-	public void subir() {
-		
-	}
-
+	
+	
 }

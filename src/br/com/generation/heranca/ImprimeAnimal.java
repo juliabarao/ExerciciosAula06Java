@@ -1,32 +1,37 @@
 package br.com.generation.heranca;
 
-public class ImprimeAnimal extends Animal{
+public class ImprimeAnimal {
 
 	public static void main(String[] args) {
 		
-		testaAnimal ta = new testaAnimal();
-		Animal cachorro = new Animal();
-		Animal cavalo = new Animal();
-		Animal preguica = new Animal();
+		InterfaceAnimal cachorro = new Cachorro();
+		Cachorro cac = new Cachorro();
 		
-		cachorro.setNome("Bahuan");
-		cachorro.setIdade(13);
-		cavalo.setNome("Spirit");
-		cavalo.setIdade(3);
-		preguica.setNome("Lua");
-		preguica.setIdade(2);
+		InterfaceAnimal cavalo = new Cavalo();
+		Cavalo cav = new Cavalo();
 		
-		System.out.println("Nome: " + cavalo.getNome() + "     Idade: " + cavalo.getIdade() + " anos");
-		ta.somAnimal(new Cavalo());
-		ta.correr(new Cavalo());
+		InterfaceAnimal preguica = new Preguica();
+		Preguica preg = new Preguica();
+				
+		cac.setNome("Bahuan");
+		cac.setIdade(13);
+		cav.setNome("Spirit");
+		cav.setIdade(3);
+		preg.setNome("Lua");
+		preg.setIdade(2);
+		
+		System.out.println("Nome: " + cav.getNome() + "     Idade: " + cav.getIdade() + " anos");
+		cavalo.somAnimal();
+		cavalo.correr();
 		System.out.println();
-		System.out.println("Nome: " + preguica.getNome() + "     Idade: " + preguica.getIdade() + " anos");
-		ta.somAnimal(new Preguica());
-		ta.subir(new Preguica());
+		System.out.println("Nome: " + preg.getNome() + "     Idade: " + preg.getIdade() + " anos");
+		preguica.somAnimal();
+		preguica.subir();
 		System.out.println();
-		System.out.println("Nome: " + cachorro.getNome() + "     Idade: " + cachorro.getIdade() + " anos");
-		ta.somAnimal(new Cachorro());
-		ta.correr(new Cachorro());
+		System.out.println("Nome: " + cac.getNome() + "     Idade: " + cac.getIdade() + " anos");
+		cachorro.somAnimal();
+		cachorro.correr();
+		
 
 	}
 
